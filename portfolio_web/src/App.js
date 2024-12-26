@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import React from 'react';
+
+// components
+import NavBar from './components/navBar';
+import About from './components/About';
+import Education from './components/Education';
+import Projects from './components/Projects';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="split">
+      <div className="left montserrat-light">
+        <h1 className="montserrat-bold name">Will Marceau</h1>
+        <h3 className="field">Computer Science Undergrad</h3>
+        <h4 className="phone">Phone: (512) 952-1090</h4>
+        <h4 className="email">Emal: willfmarceau@gmail.com</h4>
+        <h6 className="links">Github | LinkedIn</h6>
+        <NavBar />
+      </div>
+      <div className="right montserrat-light">
+        <About />
+        <Education />
+        <Projects />
+      </div>
     </div>
   );
 }

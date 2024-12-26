@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.montserrat-light {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.split {
+  display: flex;
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.right {
+  flex: 1;
+  width: 50vw;
+  margin-left: 50vw;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
+}
+
+.left {
+  width: 50vw;
+  flex: 1;
+  position: fixed;
+  display: flex;
+
+  flex-direction: column;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.navElement{
+  display: flex;
+  color: black;
+  text-decoration: none;
+  align-items: center;
+  margin-left: 110px;
+}
+
+.navElement:hover::before,
+.navElement:hover::after {
+  flex: 0.1;
+}
+
+.navElement .active {
+  color:blueviolet;
+}
+
+
+.navElement::before {
+  flex: 0.05;
+  content: '';
+  border-bottom: 2px solid black;
+  margin: 0 10px 0 0;
+  transition: flex 0.15s ease;
+}
+
+
+.name {
+  font-weight: bold;
+  font-size: 50px;
+  margin: 100px 0 15px 100px; /* Horizontally centers the element */
+}
+
+.field {
+  margin: 0 0 15px 110px; /* Horizontally centers the element */
+}
+
+.phone {
+  margin: 0 0 15px 110px; /* Horizontally centers the element */
+}
+
+.email {
+  margin: 0 0 15px 110px; /* Horizontally centers the element */
+}
+
+.links {
+  margin: 0 0 120px 110px; /* Horizontally centers the element */
+}
+
+.contentHeader {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  font-size: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contentHeader::before,
+.contentHeader::after {
+  content: '';
+  flex: 1;
+  border-bottom: 2px solid black;
+  margin: 0 10px 0 10px;
 }
