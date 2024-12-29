@@ -22,6 +22,7 @@
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+  margin-right: 100px;
 }
 
 .left {
@@ -102,4 +103,54 @@
   flex: 1;
   border-bottom: 2px solid black;
   margin: 0 10px 0 10px;
+}
+
+.about {
+  margin-top: 100px;
+}
+
+.download {
+  font-size: 25px;
+  width: 250px;
+  margin: 120px 0 0 110px;
+}
+
+.dateSchool {
+  display: flex;
+  gap: 50px;
+  margin: 0 0 0 10px;
+}
+
+.univeristy {
+  margin: 0 0 0 194px;
+}
+
+.city {
+  margin: 0 0 0 194px;
+}
+
+.eduLists {
+  display: flex;
+  justify-content: center;
+  gap: 140px;
+  margin: 0 0 0 110px;
+}
+
+.eduListTitles {
+  display: flex;
+  justify-content: center;
+  gap: 222px;
+}
+
+.projButton {
+  width: 90%;
+}
+
+
+.projList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 50px 0;
+
 }

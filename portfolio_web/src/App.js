@@ -6,6 +6,7 @@ import NavBar from './components/navBar';
 import About from './components/About';
 import Education from './components/Education';
 import Projects from './components/Projects';
+import DownloadContainer from './containers/downloadContainer';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <h4 className="email">Emal: willfmarceau@gmail.com</h4>
         <h6 className="links">Github | LinkedIn</h6>
         <NavBar />
+        <DownloadContainer />
       </div>
       <div className="right montserrat-light">
         <About />
