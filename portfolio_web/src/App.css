@@ -144,6 +144,7 @@
 
 .projButton {
   width: 90%;
+  text-align: left;
 }
 
 
@@ -153,4 +154,33 @@
   align-items: center;
   margin: 0 0 50px 0;
 
+}
+
+.projPic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 10px 0 0 0;
+  border: 2px solid black;
+  border-radius: 10%;
+}
+
+.projButtonLayout {
+  display: flex;
+  gap: 10px;
+}
+
+
+.projInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.projName {
+  font-size: 20px;
+}
+
+.techList {
+  display: flex;
+  gap: 15px;
 }
