@@ -46,24 +46,24 @@
   align-items: center;
   margin-left: 134px;
   font-size: 18px;
+  width: 165px;
 }
 
-.navElement:hover::before,
-.navElement:hover::after {
-  flex: 0.1;
+.navElement:hover::before {
+  width: 60px;
 }
 
 .navElement .active {
   color:blueviolet;
 }
 
-
+/*flex: 0.05;*/
 .navElement::before {
-  flex: 0.05;
+  width: 30px;
   content: '';
   border-bottom: 2px solid black;
   margin: 0 10px 0 0;
-  transition: flex 0.15s ease;
+  transition: width 0.15s ease;
 }
 
 
