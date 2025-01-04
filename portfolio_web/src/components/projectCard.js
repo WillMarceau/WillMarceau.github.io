@@ -1,6 +1,6 @@
 import React from "react";
 
-function ProjectCard({ onClick, name, desc, role }) {
+function ProjectCard({ onClick, name, desc, role, tags }) {
 
     return (
         <button className="projButton" onClick={onClick}>
@@ -10,12 +10,13 @@ function ProjectCard({ onClick, name, desc, role }) {
                 </div>
                 <div className="projInfo">
                     <h4 className="projName montserrat-bold">{name}</h4>
-                    <p className="montserrat-light">{desc}</p>
+                    <p className="projDesc montserrat-light">{desc}</p>
                     <div className="techList">
-                        <p className="montserrat-light">React</p>
-                        <p className="montserrat-light">CSS</p>
-                        <p className="montserrat-light">Python</p>
-                        <p className="montserrat-light">Flask</p>
+                        {tags.map((tag, index) => (
+                            <p key={index} className="montserrat-light tag" >
+                                {tag}
+                            </p>
+                        ))}
                     </div>
                 </div>
             </div>

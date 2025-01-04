@@ -8,8 +8,6 @@
   font-weight: 300;
 }
 
-
-
 .split {
   display: flex;
   height: 100vh;
@@ -22,7 +20,8 @@
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-  margin-right: 100px;
+  padding-right: 120px;
+  margin-right: 0px;
 }
 
 .left {
@@ -45,7 +44,8 @@
   color: black;
   text-decoration: none;
   align-items: center;
-  margin-left: 110px;
+  margin-left: 134px;
+  font-size: 18px;
 }
 
 .navElement:hover::before,
@@ -70,23 +70,27 @@
 .name {
   font-weight: bold;
   font-size: 50px;
-  margin: 100px 0 15px 100px; /* Horizontally centers the element */
+  margin: 100px 0 15px 122px; /* Horizontally centers the element */
 }
 
 .field {
-  margin: 0 0 15px 110px; /* Horizontally centers the element */
+  margin: 0 0 15px 132px; /* Horizontally centers the element */
+  font-size: 25px;
 }
 
+
 .phone {
-  margin: 0 0 15px 110px; /* Horizontally centers the element */
+  margin: 0 0 16px 133px; /* Horizontally centers the element */
+  font-size: 18px;
 }
 
 .email {
-  margin: 0 0 15px 110px; /* Horizontally centers the element */
+  margin: 0 0 18px 133px; /* Horizontally centers the element */
 }
 
 .links {
-  margin: 0 0 120px 110px; /* Horizontally centers the element */
+  margin: 0 0 90px 134px; 
+  font-size: 12px;
 }
 
 .contentHeader {
@@ -94,7 +98,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  font-size: 1.5rem;
+  font-size: 25px;
 }
 
 .contentHeader::before,
@@ -111,39 +115,44 @@
 
 .download {
   font-size: 25px;
-  width: 250px;
-  margin: 120px 0 0 110px;
+  width: 270px;
+  margin: 120px 0 0 127px;
 }
 
 .dateSchool {
   display: flex;
-  gap: 50px;
-  margin: 0 0 0 10px;
+  align-items: center;
+  gap: 28px;
+  margin: 0 0 0 20px;
 }
 
 .univeristy {
-  margin: 0 0 0 194px;
+  margin: 0 0 0 196px;
+  font-size: 18px;
 }
 
 .city {
-  margin: 0 0 0 194px;
+  margin: 0 0 0 197px;
+  font-size: 15px;
 }
 
 .eduLists {
   display: flex;
   justify-content: center;
-  gap: 140px;
-  margin: 0 0 0 110px;
+  gap: 60px;
+  margin: 0 20px 0 150px;
 }
 
 .eduListTitles {
   display: flex;
   justify-content: center;
-  gap: 222px;
+  gap: 137px;
+  margin: 0 0 0 44px;
+  font-size: 16px;
 }
 
 .projButton {
-  width: 90%;
+  width: 97%;
   text-align: left;
 }
 
@@ -157,17 +166,17 @@
 }
 
 .projPic {
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   object-fit: cover;
-  margin: 10px 0 0 0;
+  margin: 10px 0 0 5px;
   border: 2px solid black;
-  border-radius: 10%;
+  border-radius: 25px;
 }
 
 .projButtonLayout {
   display: flex;
-  gap: 10px;
+  gap: 30px;
 }
 
 
@@ -178,9 +187,35 @@
 
 .projName {
   font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.projDesc {
+  margin: 0px 15px 0 0;
+  font-size: 15px;
 }
 
 .techList {
   display: flex;
-  gap: 15px;
+  gap: 10px;
+}
+
+.tag {
+  border: 1px solid black;
+  padding:  5px 10px;
+  border-radius: 15px;
+}
+
+.bio {
+  font-size: 16px;
+  margin: 10px 20px;
+}
+
+.degree {
+  font-size: 20px;
+}
+
+.date {
+  font-size: 15px;
 }

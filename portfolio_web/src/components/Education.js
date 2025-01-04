@@ -6,13 +6,13 @@ function Education() {
         <div id="Education">
             <h3 className="contentHeader">Education</h3>
             <div className="dateSchool">
-                <p>Sep 2021 - Present</p>
-                <p>Bacholars of Science in Computer Science</p>
+                <p className="date">Sep 2021 - PRESENT</p>
+                <p className="montserrat-bold degree">Bacholars of Science in Computer Science</p>
             </div>
             <p className="univeristy">Univeristy of Oregon</p>
             <p className="city">Eugene, OR</p>
             <div className="eduListTitles">
-                <p>Skills</p>
+                <p>Skills:</p>
                 <p>Relevent Courses:</p>
             </div>
             <div className="eduLists">
@@ -34,9 +34,9 @@ function Education() {
                     <li>Intermediate Algorithms</li>
                     <li>Intermediate Data Structures</li>
                     <li>Computer Organizations</li>
-                    <li>Linear Algebra</li>
-                    <li>Discrete Math</li>
-                    <li>Calculus</li>
+                    <li>Linear Algebra 1 & 2</li>
+                    <li>Discrete Math 1 & 2</li>
+                    <li>Calculus 1 - 3</li>
                     <li>Computer Science 1 - 3</li>
                 </ul>
             </div>

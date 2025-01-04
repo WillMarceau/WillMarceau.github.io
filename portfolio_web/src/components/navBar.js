@@ -4,7 +4,7 @@ function NavBar(activeSection) {
 
     return (
         <nav className="navBar">
-            <a href="#about" className={`navElement ${activeSection === 'about' ? 'active' : ''}`}>
+            <a href="#About" className={`navElement ${activeSection === 'about' ? 'active' : ''}`}>
                 About
             </a>
             <a href="#Education" className={`navElement ${activeSection === 'about' ? 'active' : ''}`}>
