@@ -1,4 +1,5 @@
 import React from "react";
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 function ProjectCard({ onClick, name, desc, role, tags }) {
 
@@ -9,11 +10,14 @@ function ProjectCard({ onClick, name, desc, role, tags }) {
                     <img src="/lets-cook.png" alt="logo" className="projPic"/>
                 </div>
                 <div className="projInfo">
-                    <h4 className="projName montserrat-bold">{name}</h4>
+                    <div className="nameIcon">
+                        <h4 className="projName montserrat-bold">{name}</h4>
+                        <OpenInNewIcon className="icon" fontSize="small"/>
+                    </div>
                     <p className="projDesc montserrat-light">{desc}</p>
                     <div className="techList">
                         {tags.map((tag, index) => (
-                            <p key={index} className="montserrat-light tag" >
+                            <p key={index} className="montserrat-bold tag" >
                                 {tag}
                             </p>
                         ))}

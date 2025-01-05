@@ -1,11 +1,17 @@
+body {
+  background-color: #050C12;
+}
+
 .montserrat-bold {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  color: #BADEEF;
 }
-
+/*050C12*/
 .montserrat-light {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
+  color: #BADEEF;
 }
 
 .split {
@@ -41,7 +47,6 @@
 
 .navElement{
   display: flex;
-  color: black;
   text-decoration: none;
   align-items: center;
   margin-left: 134px;
@@ -49,23 +54,27 @@
   width: 165px;
 }
 
+.navElement:hover {
+  font-weight: 700;
+}
+
 .navElement:hover::before {
   width: 60px;
+  border-bottom: 2px solid #BADEEF;
 }
 
 .navElement .active {
-  color:blueviolet;
+  
 }
 
 /*flex: 0.05;*/
 .navElement::before {
   width: 30px;
   content: '';
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid #BADEEF;
   margin: 0 10px 0 0;
   transition: width 0.15s ease;
 }
-
 
 .name {
   font-weight: bold;
@@ -105,7 +114,7 @@
 .contentHeader::after {
   content: '';
   flex: 1;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid #BADEEF;
   margin: 0 10px 0 10px;
 }
 
@@ -115,8 +124,20 @@
 
 .download {
   font-size: 25px;
-  width: 270px;
+  width: 275px;
   margin: 120px 0 0 127px;
+  border-radius: 20px;
+  padding: 5px 5px;
+  color:#5ACAF9;
+  background-color:rgba(2, 62, 119, 0.6);
+  border: transparent;
+  transition: transform 0.2s ease,
+}
+
+.download:hover {
+  background-color: #0983C8;
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 .dateSchool {
@@ -154,8 +175,20 @@
 .projButton {
   width: 97%;
   text-align: left;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
+
+.projButton:hover {
+  background-color: #161E29;
+}
+
+.projButton:hover .projName {
+  color:#5ACAF9;
+}
 
 .projList {
   display: flex;
@@ -202,9 +235,11 @@
 }
 
 .tag {
-  border: 1px solid black;
   padding:  5px 10px;
   border-radius: 15px;
+  color: #5ACAF9;
+  background-color: rgba(2, 62, 119, 0.6);
+  font-size: 14px;
 }
 
 .bio {
@@ -218,4 +253,23 @@
 
 .date {
   font-size: 15px;
+}
+
+.nameIcon {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.icon {
+  color:#BADEEF;
+  font-size: 25px !important;
+  vertical-align: bottom;
+  margin-bottom: 10px;
+  transition: font-size 0.2s ease, color 0.2s ease;
+}
+
+.projButton:hover .icon {
+  color:#5ACAF9;
+  font-size: 30px !important;
 }
