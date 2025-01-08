@@ -63,8 +63,8 @@ body {
   border-bottom: 2px solid #BADEEF;
 }
 
-.navElement .active {
-  
+.navElement.active {
+  color:black;
 }
 
 /*flex: 0.05;*/
@@ -203,15 +203,18 @@ body {
   height: 140px;
   object-fit: cover;
   margin: 10px 0 0 5px;
-  border: 2px solid black;
+  border: 3px solid #0983C8;
   border-radius: 25px;
+}
+
+.projButton:hover .projPic {
+  border: 3px solid #0983C8;
 }
 
 .projButtonLayout {
   display: flex;
   gap: 30px;
 }
-
 
 .projInfo {
   display: flex;
@@ -273,3 +276,22 @@ body {
   color:#5ACAF9;
   font-size: 30px !important;
 }
+
+.linkIcons {
+  display: flex;
+  gap: 10px;
+  margin: 0 0 90px 134px;
+  color:#BADEEF;
+}
+
+.linkIcon {
+  font-size: 30px !important;
+  transition: transform 0.2s ease;
+}
+
+.linkIcon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  color: #0983C8;
+}
+

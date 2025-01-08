@@ -3,7 +3,7 @@ import React from "react";
 function Education() {
 
     return (
-        <div id="Education">
+        <section id="Education">
             <h3 className="contentHeader">Education</h3>
             <div className="dateSchool">
                 <p className="date">Sep 2021 - PRESENT</p>
@@ -40,7 +40,7 @@ function Education() {
                     <li>Computer Science 1 - 3</li>
                 </ul>
             </div>
-        </div>
+        </section>
     )
 }
 

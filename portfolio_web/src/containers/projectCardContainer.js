@@ -1,9 +1,9 @@
 import React from "react";
 import ProjectCard from "../components/projectCard";
 
-function ProjectCardContainer({ name, desc, role, tags }) {
+function ProjectCardContainer({ name, desc, role, tags, link }) {
     const clickHandler = () => {
-        return 1
+        window.open(link, '_blank')
     }
 
     return (
