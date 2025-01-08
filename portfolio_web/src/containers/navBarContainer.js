@@ -5,22 +5,33 @@ function NavBarContainer() {
     const [activeSection, setActiveSection] = useState('');
 
     useEffect(() => {
+        const scrollableArea = document.querySelector('.right');
+
         const handleScroll = () => {
-            const sections = document.querySelectorAll('section');
+            const sections = scrollableArea.querySelectorAll('section');
             let currentSection = '';
 
-            sections.forEach(section => {
+            sections.forEach((section, index) => {
                 const sectionTop = section.offsetTop;
-                const sectionHeight=section.clientHeight;
-                if (window.scrollY >= sectionTop - sectionHeight / 3) {
+                const sectionHeight = section.clientHeight;
+
+                if (scrollableArea.scrollTop >= sectionTop - sectionHeight / 3) {
                     currentSection = section.getAttribute('id')
                 };
+
+                const isLastSection = index === sections.length - 1;
+                const isAtBottom =
+                scrollableArea.scrollTop + scrollableArea.clientHeight >= scrollableArea.scrollHeight;
+        
+                if (isLastSection && isAtBottom) {
+                    currentSection = section.getAttribute('id');
+                }
             });
 
             setActiveSection(currentSection);
         };
 
-        window.addEventListener('scroll', handleScroll);
+        scrollableArea.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 

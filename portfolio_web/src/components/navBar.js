@@ -1,6 +1,6 @@
 import React from 'react'
 
-function NavBar(activeSection) {
+function NavBar({ activeSection }) {
 
     return (
         <nav className="navBar">

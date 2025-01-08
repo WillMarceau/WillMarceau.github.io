@@ -64,8 +64,23 @@ body {
 }
 
 .navElement.active {
-  color:black;
+  display: flex;
+  font-weight: 700;
+  text-decoration: none;
+  align-items: center;
+  margin-left: 134px;
+  font-size: 18px;
+  width: 165px;
 }
+
+.navElement.active::before {
+  width: 60px;
+  content: '';
+  border-bottom: 2px solid #BADEEF;
+  margin: 0 10px 0 0;
+  transition: width 0.15s ease;
+}
+
 
 /*flex: 0.05;*/
 .navElement::before {
