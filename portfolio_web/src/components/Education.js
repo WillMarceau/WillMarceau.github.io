@@ -11,6 +11,7 @@ function Education() {
             </div>
             <p className="univeristy">Univeristy of Oregon</p>
             <p className="city">Eugene, OR</p>
+            <br/>
             <div className="eduListTitles">
                 <p>Skills:</p>
                 <p>Relevent Courses:</p>

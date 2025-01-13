@@ -1,3 +1,4 @@
+
 body {
   background-color: #050C12;
 }
@@ -11,7 +12,7 @@ body {
 .montserrat-light {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  color: #BADEEF;
+  color: #f1f1f1;
 }
 
 .split {
@@ -56,6 +57,7 @@ body {
 
 .navElement:hover {
   font-weight: 700;
+  color: #BADEEF;
 }
 
 .navElement:hover::before {
@@ -71,6 +73,7 @@ body {
   margin-left: 134px;
   font-size: 18px;
   width: 165px;
+  color: #BADEEF;
 }
 
 .navElement.active::before {
@@ -93,13 +96,14 @@ body {
 
 .name {
   font-weight: bold;
-  font-size: 50px;
+  font-size: 45px !important;
   margin: 100px 0 15px 122px; /* Horizontally centers the element */
 }
 
 .field {
   margin: 0 0 15px 132px; /* Horizontally centers the element */
   font-size: 25px;
+  color: #BADEEF;
 }
 
 
@@ -123,6 +127,7 @@ body {
   justify-content: center;
   position: relative;
   font-size: 25px;
+  color: #BADEEF;
 }
 
 .contentHeader::before,
@@ -163,12 +168,12 @@ body {
 }
 
 .univeristy {
-  margin: 0 0 0 196px;
-  font-size: 18px;
+  margin: 0 0 0 187px;
+  font-size: 17px;
 }
 
 .city {
-  margin: 0 0 0 197px;
+  margin: 0 0 0 188px;
   font-size: 15px;
 }
 
@@ -176,15 +181,16 @@ body {
   display: flex;
   justify-content: center;
   gap: 60px;
-  margin: 0 20px 0 150px;
+  margin: 0 20px 0 165px;
+  font-size: 15px;
 }
 
 .eduListTitles {
   display: flex;
   justify-content: center;
-  gap: 137px;
-  margin: 0 0 0 44px;
-  font-size: 16px;
+  gap: 128px;
+  margin: 0 0 0 60px;
+  font-size: 17px;
 }
 
 .projButton {
@@ -214,8 +220,8 @@ body {
 }
 
 .projPic {
-  width: 140px;
-  height: 140px;
+  width: 130px;
+  height: 130px;
   object-fit: cover;
   margin: 10px 0 0 5px;
   border: 3px solid #0983C8;
@@ -244,7 +250,7 @@ body {
 
 .projDesc {
   margin: 0px 15px 0 0;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .techList {
@@ -261,16 +267,16 @@ body {
 }
 
 .bio {
-  font-size: 16px;
+  font-size: 15px;
   margin: 10px 20px;
 }
 
 .degree {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .date {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .nameIcon {

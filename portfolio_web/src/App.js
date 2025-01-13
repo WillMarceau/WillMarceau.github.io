@@ -21,7 +21,7 @@ function App() {
         <h1 className="montserrat-bold name">Will Marceau</h1>
         <h3 className="field">Computer Science Undergrad</h3>
         <h4 className="phone montserrat-light">Phone: (512) 952-1090</h4>
-        <h4 className="email montserrat-light">Emal: willfmarceau@gmail.com</h4>
+        <h4 className="email montserrat-light">Email: willfmarceau@gmail.com</h4>
         {/*<h6 className="links montserrat-light">Github | LinkedIn</h6> */}
         <AccountLinksContainer />
         <NavBarContainer />
