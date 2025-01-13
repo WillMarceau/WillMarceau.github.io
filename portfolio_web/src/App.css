@@ -181,15 +181,15 @@ body {
   display: flex;
   justify-content: center;
   gap: 60px;
-  margin: 0 20px 0 165px;
+  margin: 0 20px 0 175px;
   font-size: 15px;
 }
 
 .eduListTitles {
   display: flex;
   justify-content: center;
-  gap: 128px;
-  margin: 0 0 0 60px;
+  gap: 127px;
+  margin: 0 0 0 86px;
   font-size: 17px;
 }
 
