@@ -1,13 +1,13 @@
 import React from "react";
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
-function ProjectCard({ onClick, name, desc, role, tags }) {
+function ProjectCard({ onClick, name, desc, role, tags, img }) {
 
     return (
         <button className="projButton" onClick={onClick}>
             <div className="projButtonLayout">
                 <div>
-                    <img src="/lets-cook.png" alt="logo" className="projPic"/>
+                    <img src={img} alt="logo" className="projPic"/>
                 </div>
                 <div className="projInfo">
                     <div className="nameIcon">
