@@ -17,7 +17,7 @@ function Projects() {
                 <ProjectCardContainer name="Story-Pass" desc="An application aims to help those who can not keep up with Cyber Security Standards of today either due to memory issues, technical illiteracy or
                 an inability to access modern tech. Our solution is a local secure password manager where you sign in with a sequence of 6 images that form a story. This story password was inspired by memory and graphical password research to enable users to better remember
                 a password, while keeping it hard to crack. This way we can give users a safe way to store more advanced passwords for other applications and keep up with evolving Security Standards." 
-                tags={["Python", "Tkinter", "SQLite"]} img="/StorySecure_Logo.webp"/>
+                tags={["Python", "Tkinter", "SQLite"]} link="https://github.com/SeanLear/Story-Pass" img="/StorySecure_Logo.webp"/>
             </div>
         </section>
     )
