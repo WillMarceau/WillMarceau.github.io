@@ -19,19 +19,31 @@ function Education() {
             <div className="eduLists">
                 <ul>
                     <li>Python</li>
+                    <li>Juypter</li>
                     <li>C</li>
                     <li>C++</li>
+                    <li>C#</li>
                     <li>Javascript</li>
                     <li>React</li>
                     <li>HTML</li>
                     <li>CSS</li>
+                    <li>Pytorch</li>
+                    <li>Git</li>
+                    <li>Unity</li>
+                    <li>Tkinter</li>
+                    <li>Docker</li>
+                    <li>Flask</li>
+                    <li>mySQL</li>
+                    <li>SQLite</li>
                 </ul>
                 <ul>
                     <li>Intro to Networks</li>
                     <li>Intro to Artificial Intelligence</li>
                     <li>Software Methodologies</li>
                     <li>Operating Systems</li>
+                    <li>Game Programming</li>
                     <li>C/C++ and Unix</li>
+                    <li>Principles of Porgramming Languages</li>
                     <li>Intermediate Algorithms</li>
                     <li>Intermediate Data Structures</li>
                     <li>Computer Organizations</li>

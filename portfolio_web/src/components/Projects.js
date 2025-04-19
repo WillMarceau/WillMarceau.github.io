@@ -18,6 +18,9 @@ function Projects() {
                 an inability to access modern tech. Our solution is a local secure password manager where you sign in with a sequence of 6 images that form a story. This story password was inspired by memory and graphical password research to enable users to better remember
                 a password, while keeping it hard to crack. This way we can give users a safe way to store more advanced passwords for other applications and keep up with evolving Security Standards." 
                 tags={["Python", "Tkinter", "SQLite"]} link="https://github.com/SeanLear/Story-Pass" img="/StorySecure_Logo.webp"/>
+                <ProjectCardContainer name="Chat Program for Unix" desc="A chat service using a self defined protocol with a client and multiple server architecture where users can chat across different servers. Servers are protected with loop detection and crash recovery and
+                messages are passed between servers in the topology." tags={["C / C++", "UDP", "multi-threading"]} link="https://github.com/WillMarceau/Chat-C-Unix" img="/Chat.png"/>
+                <ProjectCardContainer name="Wrif" desc="CURRENTLY IN PROGRESS, a 3D puzzle-platformer game set in a futuristic cyberpunk inpsired city. Developed in the Unity game engine." tags={["C#", "Unity"]} link="https://github.com/WillMarceau/Wrif" img="/Temp_Wrif.png"/>
             </div>
         </section>
     )
